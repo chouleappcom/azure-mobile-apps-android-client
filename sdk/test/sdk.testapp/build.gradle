@@ -28,16 +28,14 @@ configurations.all {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(include: ['*.jar'], dir: 'libs')
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    implementation 'com.google.code.gson:gson:2.8.2'
-    implementation 'com.google.guava:guava:18.0'
-
-
-    implementation project(':sdk')
+    api 'com.google.code.gson:gson:2.8.6'
+    api 'com.google.guava:guava:24.1-jre'
+    api 'com.squareup.okhttp3:okhttp:4.4.1'
+    api project(':sdk')
 }

@@ -114,7 +114,7 @@ public class ServiceFilterResponseImpl implements ServiceFilterResponse {
 
     @Override
     public StatusLine getStatus() {
-        return StatusLine.get(mResponse);
+        return StatusLine.Companion.get(mResponse);
     }
 
     public static InputStream getUngzippedContent(Response response)  throws IOException {

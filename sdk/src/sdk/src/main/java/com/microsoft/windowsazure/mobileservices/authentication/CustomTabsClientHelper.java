@@ -22,10 +22,10 @@ package com.microsoft.windowsazure.mobileservices.authentication;
 
 import android.content.ComponentName;
 import android.content.Context;
-import android.support.customtabs.CustomTabsClient;
-import android.support.customtabs.CustomTabsIntent;
-import android.support.customtabs.CustomTabsServiceConnection;
-import android.support.customtabs.CustomTabsSession;
+import androidx.browser.customtabs.CustomTabsClient;
+import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.browser.customtabs.CustomTabsServiceConnection;
+import androidx.browser.customtabs.CustomTabsSession;
 
 /**
  * Helper class to establish connection with {@link CustomTabsClient}

@@ -8,17 +8,17 @@ ext {
 group = 'com.microsoft.azure'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.3'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 26
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
         release {
@@ -38,11 +38,11 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.google.code.gson:gson:2.8.2'
-    implementation 'com.google.guava:guava:18.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    implementation 'com.android.support:customtabs:26.1.0'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.google.code.gson:gson:2.8.6'
+    api 'com.google.guava:guava:24.1-jre'
+    api 'com.squareup.okhttp3:okhttp:4.4.1'
+    api 'androidx.browser:browser:1.2.0'
 }
 
 apply from : '../../android-libraries.gradle'
