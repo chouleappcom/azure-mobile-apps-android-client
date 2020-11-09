@@ -1,5 +1,11 @@
 # Azure Mobile Services Android SDK Change Log
 
+### Android SDK: Version 4.0.0
+- Upgrade OkHttp to 4.4.1
+- Upgrade Guava to 30.0-jre
+- Upgrade Gson to 2.8.6
+- Upgrade to use AndroidX
+
 ### Android SDK: Version 3.5.1
 - Replace OkHttp 2.5.0 with 3.9.0.
 - [#124](https://github.com/Azure/azure-mobile-apps-android-client/pull/124) Migrate a E2E test application to FCM

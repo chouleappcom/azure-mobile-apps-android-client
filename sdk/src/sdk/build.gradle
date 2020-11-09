@@ -40,7 +40,7 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     api 'com.google.code.gson:gson:2.8.6'
-    api 'com.google.guava:guava:24.1-jre'
+    api 'com.google.guava:guava:30.0-jre'
     api 'com.squareup.okhttp3:okhttp:4.4.1'
     api 'androidx.browser:browser:1.2.0'
 }
